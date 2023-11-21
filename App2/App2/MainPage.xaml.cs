@@ -13,16 +13,18 @@ namespace App2
     {
         public MainPage()
         {
+
             // Устанавливаем ширину бокового меню
             FlyoutWidth = 50;
 
             Items.Add(new FlyoutItem
             {
+
                 // Указываем путь к иконке
                 Icon = "icon_globe.png",
                 Items = {
-                    new Tab {
-                        Items = { new ShellContent { Content = new ContentPage()} }
+                    new Tab {//самая первая страница при загрузке приложения(рекомендации)
+                        Items = { new ShellContent { Content = new recompage()} }
                     }
                 }
             }) ;
@@ -32,7 +34,7 @@ namespace App2
                 Items =
                 {
                     new Tab
-                    {
+                    {//страница просто для примера, там пример уведомления 
                         Items = { new ShellContent {Content = new StartPage()} }
                     }
                 }
