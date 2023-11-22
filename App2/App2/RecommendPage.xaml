@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="Windows-1251" ?>
+п»ї<?xml version="1.0" encoding="UTF-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App2.RecommendPage" Title="info">
     <StackLayout>
-        <Label Text="Название" />
+        <Label Text="РќР°Р·РІР°РЅРёРµ" />
         <Entry Text="{Binding name_place}" />
-        <Label Text="Адрес" />
+        <Label Text="РђРґСЂРµСЃ" />
         <Entry Text="{Binding address}" />
-        <Label Text="Время работы" />
+        <Label Text="Р’СЂРµРјСЏ СЂР°Р±РѕС‚С‹" />
         <Entry Text="{Binding working_hours}" />
         <StackLayout Orientation="Horizontal">
-            <Button Text="Сохранить" Clicked="SaveRecom" />
-            <Button Text="Удалить" Clicked="DeleteRecom" />
-            <Button Text="Отмена" Clicked="Cancel" />
+            <Button Text="РЎРѕС…СЂР°РЅРёС‚СЊ" Clicked="SaveRecom" />
+            <Button Text="РЈРґР°Р»РёС‚СЊ" Clicked="DeleteRecom" />
+            <Button Text="РћС‚РјРµРЅР°" Clicked="Cancel" />
         </StackLayout>
     </StackLayout>
 </ContentPage>
